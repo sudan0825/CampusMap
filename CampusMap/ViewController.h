@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+
+@interface ViewController <GMSMapViewDelegate, CLLocationManagerDelegate, UISearchBarDelegate,UITableViewDelegate,UITableViewDataSource>: UIViewController <UISearchBarDelegate>
+
 
 
 @end

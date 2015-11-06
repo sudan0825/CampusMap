@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BB6025CCFD1A59A7FC298F1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 266D621380E5296950633432 /* libPods.a */; };
 		7FEF3CC51BE5E86B005D8168 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF3CC41BE5E86B005D8168 /* main.m */; };
 		7FEF3CC81BE5E86B005D8168 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF3CC71BE5E86B005D8168 /* AppDelegate.m */; };
 		7FEF3CCB1BE5E86B005D8168 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF3CCA1BE5E86B005D8168 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		7FEF3CD31BE5E86B005D8168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FEF3CD11BE5E86B005D8168 /* LaunchScreen.storyboard */; };
 		7FEF3CDE1BE5E86B005D8168 /* CampusMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF3CDD1BE5E86B005D8168 /* CampusMapTests.m */; };
 		7FEF3CE91BE5E86B005D8168 /* CampusMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF3CE81BE5E86B005D8168 /* CampusMapUITests.m */; };
+		7FEF3CF71BE87E28005D8168 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7FEF3CF61BE87E28005D8168 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		266D621380E5296950633432 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CCD1212F67C58F5C76BBEC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7EB69F93CAD97A92490E55FB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7FEF3CC01BE5E86B005D8168 /* CampusMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FEF3CC41BE5E86B005D8168 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FEF3CC61BE5E86B005D8168 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		7FEF3CE41BE5E86B005D8168 /* CampusMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FEF3CE81BE5E86B005D8168 /* CampusMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CampusMapUITests.m; sourceTree = "<group>"; };
 		7FEF3CEA1BE5E86B005D8168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FEF3CF61BE87E28005D8168 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB6025CCFD1A59A7FC298F1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B090EECF7671D3B2DF44922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				266D621380E5296950633432 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7FEF3CB71BE5E86B005D8168 = {
 			isa = PBXGroup;
 			children = (
+				7FEF3CF61BE87E28005D8168 /* Podfile */,
 				7FEF3CC21BE5E86B005D8168 /* CampusMap */,
 				7FEF3CDC1BE5E86B005D8168 /* CampusMapTests */,
 				7FEF3CE71BE5E86B005D8168 /* CampusMapUITests */,
 				7FEF3CC11BE5E86B005D8168 /* Products */,
+				E90465F7AF8CA8A3425EAB72 /* Pods */,
+				4B090EECF7671D3B2DF44922 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +158,15 @@
 			path = CampusMapUITests;
 			sourceTree = "<group>";
 		};
+		E90465F7AF8CA8A3425EAB72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57CCD1212F67C58F5C76BBEC /* Pods.debug.xcconfig */,
+				7EB69F93CAD97A92490E55FB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FEF3CED1BE5E86B005D8168 /* Build configuration list for PBXNativeTarget "CampusMap" */;
 			buildPhases = (
+				24DA4A0EC097ACD824A38329 /* Check Pods Manifest.lock */,
 				7FEF3CBC1BE5E86B005D8168 /* Sources */,
 				7FEF3CBD1BE5E86B005D8168 /* Frameworks */,
 				7FEF3CBE1BE5E86B005D8168 /* Resources */,
+				0D53E564111F1DA5337AF034 /* Embed Pods Frameworks */,
+				299D25307FEA93466ABC685D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +278,7 @@
 			files = (
 				7FEF3CD31BE5E86B005D8168 /* LaunchScreen.storyboard in Resources */,
 				7FEF3CD01BE5E86B005D8168 /* Assets.xcassets in Resources */,
+				7FEF3CF71BE87E28005D8168 /* Podfile in Resources */,
 				7FEF3CCE1BE5E86B005D8168 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +298,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D53E564111F1DA5337AF034 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24DA4A0EC097ACD824A38329 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		299D25307FEA93466ABC685D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7FEF3CBC1BE5E86B005D8168 /* Sources */ = {
@@ -412,6 +491,7 @@
 		};
 		7FEF3CEE1BE5E86B005D8168 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57CCD1212F67C58F5C76BBEC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CampusMap/Info.plist;
@@ -423,6 +503,7 @@
 		};
 		7FEF3CEF1BE5E86B005D8168 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB69F93CAD97A92490E55FB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CampusMap/Info.plist;
@@ -499,6 +580,7 @@
 				7FEF3CEF1BE5E86B005D8168 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FEF3CF01BE5E86B005D8168 /* Build configuration list for PBXNativeTarget "CampusMapTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +589,7 @@
 				7FEF3CF21BE5E86B005D8168 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FEF3CF31BE5E86B005D8168 /* Build configuration list for PBXNativeTarget "CampusMapUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +598,7 @@
 				7FEF3CF51BE5E86B005D8168 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
